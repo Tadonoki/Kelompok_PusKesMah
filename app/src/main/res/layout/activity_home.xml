@@ -55,8 +55,8 @@
         app:srcCompat="@drawable/logokonsultasi" />
 
     <ImageButton
-        android:id="@+id/buatjanjioffline"
-        android:layout_width="83dp"
+        android:id="@+id/buatjanjioflline"
+        android:layout_width="84dp"
         android:layout_height="95dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
