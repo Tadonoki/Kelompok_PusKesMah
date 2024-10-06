@@ -43,17 +43,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="97dp"
-        android:layout_height="101dp"
-        android:background="@null"
-        android:focusable="false"
-        android:clickable="true"
-        android:padding="0dp"
-        app:srcCompat="@drawable/logokonsultasi"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="324dp" />
+        android:id="@+id/konsultasi"
+        android:layout_width="99dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41"
+        app:srcCompat="@drawable/logokonsultasi" />
 
+    <ImageButton
+        android:id="@+id/buatjanjioffline"
+        android:layout_width="83dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419"
+        app:srcCompat="@drawable/logobuatjanjioffline" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
