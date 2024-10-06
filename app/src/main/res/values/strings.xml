@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Kelompok_PusKesMah</string>
+    <string name="title_activity_home">HomeActivity</string>
 </resources>
