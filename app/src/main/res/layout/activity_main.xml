@@ -24,7 +24,7 @@
         android:layout_width="321dp"
         android:layout_height="55dp"
         android:background="#7CC3FF"
-        android:text="Daftar2"
+        android:text="DaftarTes"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
