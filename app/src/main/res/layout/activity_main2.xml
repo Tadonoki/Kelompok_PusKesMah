@@ -11,7 +11,7 @@
         android:id="@+id/signup"
         android:layout_width="368dp"
         android:layout_height="66dp"
-        android:background="#7CC3FF"
+        android:background="@drawable/rounded_button"
         android:text="Daftar"
         android:textColor="@android:color/white"
         android:textSize="24sp"
