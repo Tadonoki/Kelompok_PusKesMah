@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Kelompok_PusKesMah"
         tools:targetApi="31" >
         <activity
-            android:name=".HomeActivity"
+            android:name=".SignInActivity"
             android:exported="false"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.Kelompok_PusKesMah" />

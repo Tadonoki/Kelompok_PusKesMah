@@ -15,7 +15,7 @@ class MainActivity2 : AppCompatActivity() {
 
         // Ketika tombol daftar di klik, pindah ke HomeActivity
         daftarButton.setOnClickListener {
-            val intent = Intent(this@MainActivity2, HomeActivity::class.java)
+            val intent = Intent(this@MainActivity2, SignInActivity::class.java)
             startActivity(intent)
         }
     }
