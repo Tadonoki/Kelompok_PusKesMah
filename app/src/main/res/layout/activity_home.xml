@@ -9,22 +9,21 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="440dp"
-        android:layout_height="945dp"
+        android:id="@+id/imageView3"
+        android:layout_width="449dp"
+        android:layout_height="920dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401"
-        app:srcCompat="@drawable/home" />
+        app:layout_constraintVertical_bias="0.517"
+        app:srcCompat="@drawable/home1" />
 
     <EditText
         android:id="@+id/search_edit_text"
         android:layout_width="261dp"
         android:layout_height="44dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="184dp"
         android:hint="Cari di sini..."
         app:layout_constraintEnd_toStartOf="@+id/search_button"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -35,13 +34,25 @@
         android:id="@+id/search_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="180dp"
         android:background="@drawable/rounded_button"
-        android:textColor="@android:color/white"
         android:text="Cari"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/search_edit_text"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="97dp"
+        android:layout_height="101dp"
+        android:background="@null"
+        android:focusable="false"
+        android:clickable="true"
+        android:padding="0dp"
+        app:srcCompat="@drawable/logokonsultasi"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="324dp" />
 
 
 
