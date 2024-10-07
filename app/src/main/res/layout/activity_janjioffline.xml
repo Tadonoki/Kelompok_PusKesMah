@@ -9,10 +9,10 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="613dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_width="248dp"
+        android:layout_height="183dp"
+        android:text="JANJI OFFLINE"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="654dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
