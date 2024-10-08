@@ -51,7 +51,7 @@
         app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.41"
+        app:layout_constraintVertical_bias="0.382"
         app:srcCompat="@drawable/logokonsultasi" />
 
     <ImageButton
@@ -60,10 +60,10 @@
         android:layout_height="95dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintHorizontal_bias="0.394"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.419"
+        app:layout_constraintVertical_bias="0.394"
         app:srcCompat="@drawable/logobuatjanjioffline" />
 
 

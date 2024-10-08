@@ -7,12 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".janjioffline">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="248dp"
-        android:layout_height="183dp"
-        android:text="JANJI OFFLINE"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="654dp" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="338dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
