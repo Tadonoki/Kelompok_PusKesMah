@@ -1,5 +1,6 @@
 package com.example.kelompok_puskesmah
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -7,6 +8,7 @@ import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
 class HomeActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home) // Menghubungkan layout activity_home.xml
@@ -24,6 +26,15 @@ class HomeActivity : AppCompatActivity() {
         // Ketika tombol masuk di klik, pindah ke Konsultasi
         ButtonKonsul.setOnClickListener {
             val intent = Intent(this@HomeActivity, konsultasi::class.java)
+            startActivity(intent)
+        }
+
+
+        val ButtonAkun = findViewById<ImageButton>(R.id.akun)
+
+        // Ketika tombol masuk di klik, pindah ke Akun
+        ButtonAkun.setOnClickListener {
+            val intent = Intent(this@HomeActivity, akun::class.java)
             startActivity(intent)
         }
     }
