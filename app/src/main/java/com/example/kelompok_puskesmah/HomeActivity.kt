@@ -13,9 +13,17 @@ class HomeActivity : AppCompatActivity() {
         // Cari tombol masuk dengan ID
         val masukButton = findViewById<ImageButton>(R.id.buatjanjioflline) // Pastikan Anda memiliki ID yang benar
 
-        // Ketika tombol masuk di klik, pindah ke HomeActivity
+        // Ketika tombol masuk di klik, pindah ke janji Offline
         masukButton.setOnClickListener {
             val intent = Intent(this@HomeActivity, janjioffline::class.java)
+            startActivity(intent)
+        }
+
+        val ButtonKonsul = findViewById<ImageButton>(R.id.konsultasi)
+
+        // Ketika tombol masuk di klik, pindah ke Konsultasi
+        ButtonKonsul.setOnClickListener {
+            val intent = Intent(this@HomeActivity, konsultasi::class.java)
             startActivity(intent)
         }
     }
