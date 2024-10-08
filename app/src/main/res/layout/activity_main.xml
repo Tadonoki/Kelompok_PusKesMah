@@ -23,7 +23,7 @@
         android:id="@+id/daftar"
         android:layout_width="321dp"
         android:layout_height="55dp"
-        android:background="#7CC3FF"
+        android:background="@drawable/rounded_button"
         android:text="Daftar"
         android:textColor="@android:color/white"
         android:textSize="24sp"
