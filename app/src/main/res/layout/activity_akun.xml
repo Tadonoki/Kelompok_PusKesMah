@@ -8,7 +8,7 @@
     tools:context=".akun">
 
     <ImageView
-        android:id="@+id/TampilanAkun"
+        android:id="@+id/Tampilanakun"
         android:layout_width="457dp"
         android:layout_height="955dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,6 +29,42 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/beranda" />
+
+    <ImageButton
+        android:id="@+id/akun"
+        android:layout_width="61dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/buttonakun" />
+
+    <ImageButton
+        android:id="@+id/pesan"
+        android:layout_width="61dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/pesan" />
+
+    <ImageButton
+        android:id="@+id/riwayat"
+        android:layout_width="61dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/riwayat" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
