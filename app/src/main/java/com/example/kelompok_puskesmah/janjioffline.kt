@@ -1,18 +1,39 @@
 package com.example.kelompok_puskesmah
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class janjioffline : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_janjioffline) // Pastikan layout ini memiliki Spinner
+
+        val buttonJanji = findViewById<ImageButton>(R.id.janjiofflinekehome)
+
+        // Ketika tombol konsultasi kembali ke home di klik, pindah ke HomeActivity
+        buttonJanji.setOnClickListener {
+            val intent = Intent(this@janjioffline, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonlanjutJanji = findViewById<Button>(R.id.lanjutjanjioffline)
+
+        // Ketika tombol konsultasi kembali ke home di klik, pindah ke HomeActivity
+        buttonlanjutJanji.setOnClickListener {
+            val intent = Intent(this@janjioffline, pilihdokterjanji::class.java)
+            startActivity(intent)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
