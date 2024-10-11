@@ -1,6 +1,5 @@
 package com.example.kelompok_puskesmah
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
@@ -9,26 +8,31 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class detaildokterjanji : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+class Pesan : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_detaildokterjanji)
+        setContentView(R.layout.activity_pesan)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val buttonKonsul1 = findViewById<ImageButton>(R.id.detaildokterkembali)
+        val ButtonHome = findViewById<ImageButton>(R.id.beranda)
 
-        // Ketika tombol konsultasi kembali ke home di klik, pindah ke HomeActivity
-        buttonKonsul1.setOnClickListener {
-            val intent = Intent(this@detaildokterjanji, pilihdokterjanji::class.java)
+        // Ketika tombol masuk di klik, pindah ke Beranda
+        ButtonHome.setOnClickListener {
+            val intent = Intent(this@Pesan, HomeActivity::class.java)
             startActivity(intent)
         }
 
+        val ButtonAkun = findViewById<ImageButton>(R.id.akun)
 
+        // Ketika tombol masuk di klik, pindah ke Beranda
+        ButtonAkun.setOnClickListener {
+            val intent = Intent(this@Pesan, akun::class.java)
+            startActivity(intent)
+        }
     }
 }

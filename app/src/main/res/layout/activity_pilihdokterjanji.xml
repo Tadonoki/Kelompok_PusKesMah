@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/pilihdokterjanji" />
 
     <Button
-        android:id="@+id/pilihdokter1"
+        android:id="@+id/AnastasyaAmanda"
         android:layout_width="185dp"
         android:layout_height="33dp"
         android:background="@drawable/rounded_button"
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.285" />
 
     <Button
-        android:id="@+id/pilihdokter2"
+        android:id="@+id/RahmatMaulana"
         android:layout_width="185dp"
         android:layout_height="33dp"
         android:background="@drawable/rounded_button"
@@ -49,15 +49,15 @@
         app:layout_constraintVertical_bias="0.53" />
 
     <ImageButton
-        android:id="@+id/konsultasikembalijanjioffline"
+        android:id="@+id/pilihkembalijanjioffline"
         android:layout_width="62dp"
         android:layout_height="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019"
+        app:layout_constraintVertical_bias="0.01"
         app:srcCompat="@drawable/arrowleft" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

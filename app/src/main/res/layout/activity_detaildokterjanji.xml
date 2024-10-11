@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439"
+        app:layout_constraintVertical_bias="0.814"
         app:srcCompat="@drawable/detaildokterjanji" />
 
     <Button
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.781" />
 
     <ImageButton
-        android:id="@+id/detaildokterkembalikepilihdokter"
+        android:id="@+id/detaildokterkembali"
         android:layout_width="64dp"
         android:layout_height="51dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053"
+        app:layout_constraintVertical_bias="0.018"
         app:srcCompat="@drawable/arrowleft"
         tools:ignore="NotSibling" />
 

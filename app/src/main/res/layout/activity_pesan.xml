@@ -5,30 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".akun">
+    tools:context=".Pesan">
 
     <ImageView
-        android:id="@+id/Tampilanakun1"
-        android:layout_width="457dp"
-        android:layout_height="955dp"
+        android:id="@+id/pesan"
+        android:layout_width="449dp"
+        android:layout_height="920dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/akun" />
-
-    <ImageButton
-        android:id="@+id/beranda"
-        android:layout_width="61dp"
-        android:layout_height="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        app:srcCompat="@drawable/beranda" />
+        app:layout_constraintVertical_bias="0.103"
+        app:srcCompat="@drawable/tampilanpesan" />
 
     <ImageButton
         android:id="@+id/akun"
@@ -36,14 +24,14 @@
         android:layout_height="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/buttonakun" />
 
     <ImageButton
-        android:id="@+id/pesan"
+        android:id="@+id/buttonpesan"
         android:layout_width="61dp"
         android:layout_height="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,7 +39,7 @@
         app:layout_constraintHorizontal_bias="0.665"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/pesan" />
 
     <ImageButton
@@ -63,8 +51,19 @@
         app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/riwayat" />
 
+    <ImageButton
+        android:id="@+id/beranda"
+        android:layout_width="61dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/beranda" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

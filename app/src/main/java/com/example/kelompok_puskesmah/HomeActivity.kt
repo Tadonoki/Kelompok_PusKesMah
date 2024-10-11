@@ -37,5 +37,13 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this@HomeActivity, akun::class.java)
             startActivity(intent)
         }
+
+        val ButtonPesan = findViewById<ImageButton>(R.id.pesan)
+
+        // Ketika tombol masuk di klik, pindah ke Akun
+        ButtonPesan.setOnClickListener {
+            val intent = Intent(this@HomeActivity, Pesan::class.java)
+            startActivity(intent)
+        }
     }
 }

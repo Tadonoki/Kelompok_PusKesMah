@@ -45,7 +45,7 @@ class janjioffline : AppCompatActivity() {
         val spinner: Spinner = findViewById(R.id.spinner) // Pastikan ID ini sesuai dengan layout activity_janjioffline
 
         // Data untuk dropdown
-        val items = arrayOf("Item 1", "Item 2", "Item 3", "Item 4")
+        val items = arrayOf("Poli Umum", "Poli Gigi dan Mulut", "Layanan Gawat Darurat","Layanan Psikologi","Layanan Laboratorium","Layanan Radiologi","Layanan Surat Keterangan Sehat")
 
         // Adapter untuk Spinner
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
