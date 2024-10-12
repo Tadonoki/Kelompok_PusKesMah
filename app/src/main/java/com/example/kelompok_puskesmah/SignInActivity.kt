@@ -11,7 +11,7 @@ class SignInActivity : AppCompatActivity() {
         setContentView(R.layout.activity_signin) // Menghubungkan layout activity_signin.xml
 
         // Cari tombol masuk dengan ID
-        val masukButton = findViewById<Button>(R.id.masuk) // Pastikan Anda memiliki ID yang benar
+        val masukButton = findViewById<Button>(R.id.signin) // Pastikan Anda memiliki ID yang benar
 
         // Ketika tombol masuk di klik, pindah ke HomeActivity
         masukButton.setOnClickListener {
