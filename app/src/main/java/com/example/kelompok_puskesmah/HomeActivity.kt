@@ -3,7 +3,6 @@ package com.example.kelompok_puskesmah
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
@@ -40,6 +39,12 @@ class HomeActivity : AppCompatActivity() {
 
         val ButtonPesan = findViewById<ImageButton>(R.id.pesan)
 
+        // Ketika tombol masuk di klik, pindah ke Riwayat
+        val riwayatButton = findViewById<ImageButton>(R.id.riwayat)
+        riwayatButton.setOnClickListener {
+            val intent = Intent(this@HomeActivity, Riwayat::class.java)
+            startActivity(intent)
+        }
         // Ketika tombol masuk di klik, pindah ke Akun
         ButtonPesan.setOnClickListener {
             val intent = Intent(this@HomeActivity, Pesan::class.java)
