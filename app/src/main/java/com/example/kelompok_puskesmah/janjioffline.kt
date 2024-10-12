@@ -5,11 +5,14 @@ import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
+import android.view.ViewGroup
 import androidx.activity.enableEdgeToEdge
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Spinner
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -52,12 +55,39 @@ class janjioffline : AppCompatActivity() {
         // Data untuk dropdown
         val items = arrayOf("Poli Umum", "Poli Gigi dan Mulut", "Layanan Gawat Darurat","Layanan Psikologi","Layanan Laboratorium","Layanan Radiologi","Layanan Surat Keterangan Sehat")
 
-        // Adapter untuk Spinner
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
+        // Adapter untuk Spinner dengan warna teks hitam
+        val adapter = object : ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, items) {
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getView(position, convertView, parent)
+                (view as TextView).setTextColor(Color.BLACK) // Atur warna teks item terpilih
+                return view
+            }
+        }
         // Set adapter ke Spinner
         spinner.adapter = adapter
+
+        // Get the Spinner from the XML
+        val lokasiSpinner: Spinner = findViewById(R.id.lokasi)
+
+        // Create an ArrayAdapter using a simple spinner layout and a string array
+        val lokasiOptions = arrayOf("Klinik UNSRI")
+        val adapter1 = object : ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lokasiOptions) {
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getView(position, convertView, parent)
+                (view as TextView).setTextColor(Color.BLACK) // Atur warna teks item terpilih
+                return view
+            }
+        }
+
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        // Apply the adapter to the spinner
+        lokasiSpinner.adapter = adapter1
+
+
+
+
 
 
         val jam09: Button = findViewById(R.id.jam09)

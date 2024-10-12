@@ -9,13 +9,13 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="449dp"
-        android:layout_height="920dp"
+        android:layout_width="412dp"
+        android:layout_height="887dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751"
         app:srcCompat="@drawable/janjioffline" />
 
     <Spinner
@@ -24,10 +24,22 @@
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintHorizontal_bias="0.696"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintVertical_bias="0.127"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/lokasi"
+        android:layout_width="312dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.696"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -45,6 +57,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.781" />
 
+
     <ImageButton
         android:id="@+id/janjiofflinekehome"
         android:layout_width="64dp"
@@ -54,10 +67,9 @@
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
+        app:layout_constraintVertical_bias="0.019"
         app:srcCompat="@drawable/arrowleft"
         tools:ignore="NotSibling" />
-
 
     <Button
         android:id="@+id/jam09"
@@ -73,10 +85,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514"
+        app:layout_constraintVertical_bias="0.524"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -93,10 +105,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513"
+        app:layout_constraintVertical_bias="0.523"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -113,12 +125,71 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintHorizontal_bias="0.902"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.512"
+        app:layout_constraintVertical_bias="0.523"
         tools:ignore="MissingConstraints" />
 
+    <EditText
+        android:id="@+id/tanggal"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:backgroundTint="#CCCCCC"
+        android:hint="Tanggal"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#8C8994"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Bulan"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:backgroundTint="#CCCCCC"
+        android:hint="Bulan"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#8C8994"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Tahun"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:backgroundTint="#CCCCCC"
+        android:hint="Tahun"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#8C8994"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
