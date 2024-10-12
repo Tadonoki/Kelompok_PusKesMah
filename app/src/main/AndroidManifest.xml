@@ -14,10 +14,13 @@
         android:theme="@style/Theme.Kelompok_PusKesMah"
         tools:targetApi="31">
         <activity
-            android:name=".chatdokterkonsultasi"
+            android:name=".konfirmasipembayaranobat"
             android:exported="false" />
         <activity
-            android:name=".chatdokter"
+            android:name=".pembelianobat"
+            android:exported="false" />
+        <activity
+            android:name=".chatdokterkonsultasi"
             android:exported="false" />
         <activity
             android:name=".Pesan"

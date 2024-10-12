@@ -15,11 +15,15 @@ class chatdokterkonsultasi : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_chatdokterkonsultasi)
         val buttonKonsul = findViewById<ImageButton>(R.id.backtodetaildokter)
+        val buttonobat = findViewById<Button>(R.id.beliobat)
 
         buttonKonsul.setOnClickListener {
             val intent = Intent(this@chatdokterkonsultasi, Detaildokter::class.java)
             startActivity(intent)
         }
-
+        buttonobat.setOnClickListener{
+            val intent = Intent(this@chatdokterkonsultasi, pembelianobat::class.java)
+            startActivity(intent)
+        }
     }
 }
