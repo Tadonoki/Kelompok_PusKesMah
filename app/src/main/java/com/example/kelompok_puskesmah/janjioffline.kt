@@ -2,6 +2,8 @@ package com.example.kelompok_puskesmah
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import android.widget.ArrayAdapter
@@ -13,6 +15,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class janjioffline : AppCompatActivity() {
+    private var isJam09Pressed = false// Variabel untuk melacak status tombol
+    private var isJam11Pressed = false
+    private var isJam13Pressed = false
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,5 +58,49 @@ class janjioffline : AppCompatActivity() {
 
         // Set adapter ke Spinner
         spinner.adapter = adapter
+
+
+        val jam09: Button = findViewById(R.id.jam09)
+        jam09.setOnClickListener {
+            isJam09Pressed = !isJam09Pressed // Toggle status tombol
+
+            if (isJam09Pressed) {
+                // Jika tombol ditekan, ubah warna latar belakang
+                jam09.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#82C1FF")) // Warna saat ditekan
+            } else {
+                // Jika tombol ditekan lagi, kembalikan ke warna awal
+                jam09.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#FFFFFF")) // Warna awal
+            }
+        }
+
+
+        val jam11: Button = findViewById(R.id.jam11)
+        jam11.setOnClickListener {
+            isJam11Pressed = !isJam11Pressed // Toggle status tombol
+
+            if (isJam11Pressed) {
+                // Jika tombol ditekan, ubah warna latar belakang
+                jam11.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#82C1FF")) // Warna saat ditekan
+            } else {
+                // Jika tombol ditekan lagi, kembalikan ke warna awal
+                jam11.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#FFFFFF")) // Warna awal
+            }
+        }
+
+        val jam13: Button = findViewById(R.id.jam13)
+        jam13.setOnClickListener {
+            isJam13Pressed = !isJam13Pressed // Toggle status tombol
+
+            if (isJam13Pressed) {
+                // Jika tombol ditekan, ubah warna latar belakang
+                jam13.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#82C1FF")) // Warna saat ditekan
+            } else {
+                // Jika tombol ditekan lagi, kembalikan ke warna awal
+                jam13.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#FFFFFF")) // Warna awal
+            }
+        }
+
+
+
     }
 }

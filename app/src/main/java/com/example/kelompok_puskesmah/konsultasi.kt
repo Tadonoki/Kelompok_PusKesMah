@@ -15,6 +15,10 @@ class konsultasi : AppCompatActivity() {
 
         val buttonKonsul = findViewById<ImageButton>(R.id.konsultasikembalihome)
         val buttonDokter1 = findViewById<Button>(R.id.detaildokter1)
+        val beranda = findViewById<ImageButton>(R.id.beranda)
+        val riwayat = findViewById<ImageButton>(R.id.riwayat)
+        val pesan = findViewById<ImageButton>(R.id.pesan)
+
 
         // Ketika tombol konsultasi kembali ke home di klik, pindah ke HomeActivity
         buttonKonsul.setOnClickListener {
@@ -27,5 +31,29 @@ class konsultasi : AppCompatActivity() {
             val intent = Intent(this@konsultasi, Detaildokter::class.java)
             startActivity(intent)
         }
+
+        beranda.setOnClickListener {
+            val intent = Intent(this@konsultasi, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
+        riwayat.setOnClickListener {
+            val intent = Intent(this@konsultasi, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
+        pesan.setOnClickListener {
+            val intent = Intent(this@konsultasi, Pesan::class.java)
+            startActivity(intent)
+        }
+
+        val ButtonAkun = findViewById<ImageButton>(R.id.akun)
+
+        // Ketika tombol masuk di klik, pindah ke Akun
+        ButtonAkun.setOnClickListener {
+            val intent = Intent(this@konsultasi, akun::class.java)
+            startActivity(intent)
+        }
+
     }
 }
