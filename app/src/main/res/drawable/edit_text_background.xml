@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Optional padding inside the EditText -->
+    <padding
+        android:left="8dp"
+        android:right="8dp"
+        android:top="4dp"
+        android:bottom="4dp" />
+
+</shape>
