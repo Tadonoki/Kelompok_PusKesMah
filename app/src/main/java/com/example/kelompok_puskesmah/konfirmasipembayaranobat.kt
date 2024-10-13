@@ -16,7 +16,7 @@ class konfirmasipembayaranobat : AppCompatActivity() {
         val cekpesanan = findViewById<Button>(R.id.cekpesanan)
 
         cekpesanan.setOnClickListener {
-            val intent = Intent(this@konfirmasipembayaranobat, Riwayat::class.java)
+            val intent = Intent(this@konfirmasipembayaranobat, RiwayatObat::class.java)
             startActivity(intent)
         }
     }
