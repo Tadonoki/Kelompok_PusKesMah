@@ -18,7 +18,7 @@ class chatdokterkonsultasi : AppCompatActivity() {
         val buttonobat = findViewById<Button>(R.id.beliobat)
 
         buttonKonsul.setOnClickListener {
-            val intent = Intent(this@chatdokterkonsultasi, Detaildokter::class.java)
+            val intent = Intent(this@chatdokterkonsultasi, HomeActivity::class.java)
             startActivity(intent)
         }
         buttonobat.setOnClickListener{
