@@ -41,7 +41,7 @@ class HomeActivity : AppCompatActivity() {
 
         // Ketika tombol masuk di klik, pindah ke janji Offline
         poligigi.setOnClickListener {
-            val intent = Intent(this@HomeActivity, janjioffline::class.java)
+            val intent = Intent(this@HomeActivity, notfound404::class.java)
             startActivity(intent)
         }
 
