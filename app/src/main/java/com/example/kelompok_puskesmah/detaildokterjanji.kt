@@ -3,6 +3,7 @@ package com.example.kelompok_puskesmah
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -23,12 +24,18 @@ class detaildokterjanji : AppCompatActivity() {
 
         val buttonKonsul1 = findViewById<ImageButton>(R.id.detaildokterkembali)
 
-        // Ketika tombol konsultasi kembali ke home di klik, pindah ke HomeActivity
+
         buttonKonsul1.setOnClickListener {
             val intent = Intent(this@detaildokterjanji, pilihdokterjanji::class.java)
             startActivity(intent)
         }
 
+        val konfirmasijanji = findViewById<Button>(R.id.konfirmasijanji)
+
+        konfirmasijanji.setOnClickListener {
+            val intent = Intent(this@detaildokterjanji, Riwayat::class.java)
+            startActivity(intent)
+        }
 
     }
 }
