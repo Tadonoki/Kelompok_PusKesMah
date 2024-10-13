@@ -24,6 +24,13 @@ class akun : AppCompatActivity() {
 
         val ButtonPesan = findViewById<ImageButton>(R.id.pesan)
 
+        // Ketika tombol masuk di klik, pindah ke Riwayat
+        val riwayatButton = findViewById<ImageButton>(R.id.riwayat)
+        riwayatButton.setOnClickListener {
+            val intent = Intent(this@akun, Riwayat::class.java)
+            startActivity(intent)
+        }
+
         // Ketika tombol masuk di klik, pindah ke pesan
         ButtonPesan.setOnClickListener {
             val intent = Intent(this@akun, Pesan::class.java)

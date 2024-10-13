@@ -45,6 +45,7 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this@HomeActivity, Riwayat::class.java)
             startActivity(intent)
         }
+
         // Ketika tombol masuk di klik, pindah ke Akun
         ButtonPesan.setOnClickListener {
             val intent = Intent(this@HomeActivity, Pesan::class.java)
