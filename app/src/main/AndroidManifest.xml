@@ -18,7 +18,10 @@
             android:exported="false" />
         <activity
             android:name=".Riwayat"
-            android:exported="false"></activity>
+            android:exported="false"/>
+        <activity
+            android:name=".RiwayatObat"
+            android:exported="false"/>
         <activity
             android:name=".konfirmasipembayaranobat"
             android:exported="false" />
