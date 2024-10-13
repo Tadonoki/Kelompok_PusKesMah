@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/pilihdokterjanji"
-        android:layout_width="412dp"
-        android:layout_height="887dp"
+        android:layout_width="421dp"
+        android:layout_height="905dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -54,10 +54,10 @@
         android:layout_height="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintVertical_bias="0.019"
         app:srcCompat="@drawable/arrowleft" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

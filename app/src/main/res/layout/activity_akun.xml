@@ -8,63 +8,80 @@
     tools:context=".akun">
 
     <ImageView
-        android:id="@+id/Tampilanakun1"
-        android:layout_width="457dp"
-        android:layout_height="955dp"
+        android:id="@+id/imageView11"
+        android:layout_width="420dp"
+        android:layout_height="898dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/akun" />
 
-    <ImageButton
-        android:id="@+id/beranda"
-        android:layout_width="61dp"
-        android:layout_height="64dp"
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="36dp"
+        android:background="#7CC3FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        app:srcCompat="@drawable/beranda" />
+        app:layout_constraintVertical_bias="0.939" />
 
     <ImageButton
         android:id="@+id/akun"
         android:layout_width="61dp"
         android:layout_height="64dp"
+        android:background="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="0.98"
         app:srcCompat="@drawable/buttonakun" />
 
     <ImageButton
-        android:id="@+id/pesan"
+        android:id="@+id/beranda"
         android:layout_width="61dp"
         android:layout_height="64dp"
+        android:background="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
-        app:srcCompat="@drawable/pesan" />
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/beranda" />
 
     <ImageButton
         android:id="@+id/riwayat"
         android:layout_width="61dp"
         android:layout_height="64dp"
+        android:background="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintHorizontal_bias="0.374"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="0.98"
         app:srcCompat="@drawable/riwayat" />
 
+    <ImageButton
+        android:id="@+id/pesan"
+        android:layout_width="61dp"
+        android:layout_height="64dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/pesan" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

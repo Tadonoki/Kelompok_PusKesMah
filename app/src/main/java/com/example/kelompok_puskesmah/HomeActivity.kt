@@ -18,6 +18,7 @@ class HomeActivity : AppCompatActivity() {
         masukButton.setOnClickListener {
             val intent = Intent(this@HomeActivity, janjioffline::class.java)
             startActivity(intent)
+
         }
 
         val ButtonKonsul = findViewById<ImageButton>(R.id.konsultasi)
@@ -27,6 +28,63 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this@HomeActivity, konsultasi::class.java)
             startActivity(intent)
         }
+
+        val poliumum = findViewById<ImageButton>(R.id.poliumum) // Pastikan Anda memiliki ID yang benar
+
+        // Ketika tombol masuk di klik, pindah ke janji Offline
+        poliumum.setOnClickListener {
+            val intent = Intent(this@HomeActivity, janjioffline::class.java)
+            startActivity(intent)
+        }
+
+        val poligigi = findViewById<ImageButton>(R.id.poligigi) // Pastikan Anda memiliki ID yang benar
+
+        // Ketika tombol masuk di klik, pindah ke janji Offline
+        poligigi.setOnClickListener {
+            val intent = Intent(this@HomeActivity, janjioffline::class.java)
+            startActivity(intent)
+        }
+
+        val layanangawat = findViewById<ImageButton>(R.id.layanangawat) // Pastikan Anda memiliki ID yang benar
+
+        // Ketika tombol masuk di klik, pindah ke janji Offline
+        layanangawat.setOnClickListener {
+            val intent = Intent(this@HomeActivity, janjioffline::class.java)
+            startActivity(intent)
+        }
+
+        val layananpsikologi = findViewById<ImageButton>(R.id.layananpsikologi) // Pastikan Anda memiliki ID yang benar
+
+        // Ketika tombol masuk di klik, pindah ke janji Offline
+        layananpsikologi.setOnClickListener {
+            val intent = Intent(this@HomeActivity, janjioffline::class.java)
+            startActivity(intent)
+        }
+
+        val layananlab = findViewById<ImageButton>(R.id.layananlab) // Pastikan Anda memiliki ID yang benar
+
+        // Ketika tombol masuk di klik, pindah ke janji Offline
+        layananlab.setOnClickListener {
+            val intent = Intent(this@HomeActivity, janjioffline::class.java)
+            startActivity(intent)
+        }
+
+        val layananradiologi = findViewById<ImageButton>(R.id.layananradiologi) // Pastikan Anda memiliki ID yang benar
+
+        // Ketika tombol masuk di klik, pindah ke janji Offline
+        layananradiologi.setOnClickListener {
+            val intent = Intent(this@HomeActivity, janjioffline::class.java)
+            startActivity(intent)
+        }
+
+        val layanansurat = findViewById<ImageButton>(R.id.layanansurat) // Pastikan Anda memiliki ID yang benar
+
+        // Ketika tombol masuk di klik, pindah ke janji Offline
+        layanansurat.setOnClickListener {
+            val intent = Intent(this@HomeActivity, janjioffline::class.java)
+            startActivity(intent)
+        }
+
 
 
         val ButtonAkun = findViewById<ImageButton>(R.id.akun)
