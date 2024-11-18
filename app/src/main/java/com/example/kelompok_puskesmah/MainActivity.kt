@@ -22,5 +22,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, MainActivity2::class.java)
             startActivity(intent)
         }
+        val loginButton = findViewById<Button>(R.id.login)
+
+        // Ketika tombol daftar di klik, pindah ke MainActivity2
+        loginButton.setOnClickListener {
+            val intent = Intent(this@MainActivity, SignInActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="428dp"
-        android:layout_height="938dp"
+        android:layout_width="413dp"
+        android:layout_height="909dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -24,15 +24,29 @@
         android:id="@+id/daftar"
         android:layout_width="321dp"
         android:layout_height="55dp"
+        android:layout_marginTop="624dp"
         android:background="@drawable/rounded_button"
         android:text="Daftar"
         android:textColor="@android:color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.775" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="321dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/rounded_button"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/daftar"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
