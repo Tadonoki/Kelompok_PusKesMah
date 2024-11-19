@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -11,6 +12,9 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home) // Menghubungkan layout activity_home.xml
+        // Mengambil username dari SharedPreferences
+        val sharedPref = getSharedPreferences("UserPref", MODE_PRIVATE)
+        val username = sharedPref.getString("username", null)
         // Cari tombol masuk dengan ID
         val masukButton = findViewById<ImageButton>(R.id.buatjanjioflline) // Pastikan Anda memiliki ID yang benar
 
@@ -91,7 +95,9 @@ class HomeActivity : AppCompatActivity() {
 
         // Ketika tombol masuk di klik, pindah ke Akun
         ButtonAkun.setOnClickListener {
+            // Kirim username ke activity akun
             val intent = Intent(this@HomeActivity, akun::class.java)
+            intent.putExtra("username", username)  // Menambahkan data username
             startActivity(intent)
         }
 

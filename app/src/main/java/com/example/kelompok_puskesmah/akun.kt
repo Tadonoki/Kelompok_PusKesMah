@@ -8,55 +8,33 @@ import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 class akun : AppCompatActivity() {
 
     private lateinit var database: DatabaseReference
     private var username: String? = null // Username yang diambil dari SharedPreferences atau intent
+    private var email: String? = null // Username yang diambil dari SharedPreferences atau intent
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_akun)
 
-        // Inisialisasi referensi database Firebase
-        database = FirebaseDatabase.getInstance().getReference("users")
+        // Ambil username dari Intent yang diterima dan simpan dalam variabel kelas
+        username = intent.getStringExtra("username")
 
-        // Ambil username dari SharedPreferences (atau cara lain)
-        val sharedPref = getSharedPreferences("UserPref", MODE_PRIVATE)
-        username = sharedPref.getString("username", null)
+        intent.putExtra("email", email)  // Menambahkan data email
 
-        // Inisialisasi TextView untuk menampilkan data
-        val tvUsername = findViewById<TextView>(R.id.tvUsername)
-        val tvEmail = findViewById<TextView>(R.id.tvEmail)
-        val tvPassword = findViewById<TextView>(R.id.tvPassword)
 
-        // Periksa apakah username tersedia
-        if (username != null) {
-            // Ambil data pengguna berdasarkan username
-            database.child(username!!).addListenerForSingleValueEvent(object : ValueEventListener {
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    if (snapshot.exists()) {
-                        val userEmail = snapshot.child("email").getValue(String::class.java) ?: "Tidak tersedia"
-                        val userPassword = snapshot.child("password").getValue(String::class.java) ?: "Tidak tersedia"
+        // Menampilkan username di TextView
+        val textViewUsername = findViewById<TextView>(R.id.etUsername)
+        textViewUsername.text = username ?: "Username tidak ditemukan"
 
-                        // Tampilkan data di TextView
-                        tvUsername.text = "Username: $username"
-                        tvEmail.text = "Email: $userEmail"
-                        tvPassword.text = "Password: $userPassword"
-                    } else {
-                        Toast.makeText(this@akun, "Data pengguna tidak ditemukan.", Toast.LENGTH_SHORT).show()
-                    }
-                }
-
-                override fun onCancelled(error: DatabaseError) {
-                    Toast.makeText(this@akun, "Gagal memuat data: ${error.message}", Toast.LENGTH_SHORT).show()
-                }
-            })
-        } else {
-            Toast.makeText(this, "Username tidak ditemukan.", Toast.LENGTH_SHORT).show()
-        }
+        // Menampilkan email di TextView
+        val textViewEmail = findViewById<TextView>(R.id.tvEmail)
+        textViewEmail.text = email ?: "Email tidak ditemukan"
 
         // Navigasi ke Beranda
         val buttonHome = findViewById<ImageButton>(R.id.beranda)
@@ -83,6 +61,7 @@ class akun : AppCompatActivity() {
         val logoutButton = findViewById<Button>(R.id.btnLogout)
         logoutButton.setOnClickListener {
             // Hapus data dari SharedPreferences
+            val sharedPref = getSharedPreferences("UserPref", MODE_PRIVATE)
             sharedPref.edit().clear().apply()
 
             // Navigasi ke halaman login

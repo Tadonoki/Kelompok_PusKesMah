@@ -21,13 +21,13 @@
         app:srcCompat="@drawable/akun" />
 
     <TextView
-        android:id="@+id/tvUsername"
+        android:id="@+id/etUsername"
         android:layout_width="335dp"
         android:layout_height="45dp"
         android:layout_marginTop="208dp"
         android:background="@drawable/edit_text_background"
         android:fontFamily="@font/fontoutfit"
-        android:text="Nama Lengkap: "
+        android:text=""
         android:padding="12dp"
         android:textColor="#8C8994"
         android:textSize="16sp"
@@ -42,7 +42,7 @@
         android:layout_marginTop="280dp"
         android:background="@drawable/edit_text_background"
         android:fontFamily="@font/fontoutfit"
-        android:text="Email: "
+        android:text=""
         android:padding="12dp"
         android:textColor="#8C8994"
         android:textSize="16sp"
@@ -57,7 +57,7 @@
         android:layout_marginTop="352dp"
         android:background="@drawable/edit_text_background"
         android:fontFamily="@font/fontoutfit"
-        android:text="Password: "
+        android:text="*******"
         android:padding="12dp"
         android:textColor="#8C8994"
         android:textSize="16sp"

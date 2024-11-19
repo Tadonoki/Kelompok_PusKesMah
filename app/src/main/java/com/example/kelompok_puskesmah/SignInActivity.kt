@@ -40,7 +40,7 @@ class SignInActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Tombol Login -> Validasi login dengan Firebase
+        /// Tombol Login -> Validasi login dengan Firebase
         btnLogin.setOnClickListener {
             val username = etUsername.text.toString()
             val password = etPassword.text.toString()
@@ -53,9 +53,16 @@ class SignInActivity : AppCompatActivity() {
                         if (snapshot.child(username).exists()) {
                             val storedPassword = snapshot.child(username).child("password").getValue(String::class.java)
                             if (storedPassword == password) {
+                                // Login berhasil, simpan username ke SharedPreferences
+                                val sharedPref = getSharedPreferences("UserPref", MODE_PRIVATE)
+                                val editor = sharedPref.edit()
+                                editor.putString("username", username)  // Simpan username
+                                editor.apply()
                                 Toast.makeText(this@SignInActivity, "Login Berhasil", Toast.LENGTH_SHORT).show()
-                                val homeIntent = Intent(this@SignInActivity, HomeActivity::class.java)
-                                startActivity(homeIntent)
+                                // Kirim username ke activity akun
+                                val intent = Intent(this@SignInActivity, HomeActivity::class.java)
+                                intent.putExtra("username", username)  // Menambahkan data username
+                                startActivity(intent)
                             } else {
                                 Toast.makeText(this@SignInActivity, "Password salah", Toast.LENGTH_SHORT).show()
                             }
@@ -70,5 +77,6 @@ class SignInActivity : AppCompatActivity() {
                 })
             }
         }
+
     }
 }
