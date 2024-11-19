@@ -37,16 +37,14 @@
         android:id="@+id/login"
         android:layout_width="321dp"
         android:layout_height="55dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/rounded_button"
         android:text="Login"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/daftar"/>
-
-
+        app:layout_constraintTop_toTopOf="@+id/daftar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
