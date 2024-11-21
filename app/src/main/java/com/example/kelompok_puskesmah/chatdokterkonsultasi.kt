@@ -22,7 +22,7 @@ class chatdokterkonsultasi : AppCompatActivity() {
             startActivity(intent)
         }
         buttonobat.setOnClickListener{
-            val intent = Intent(this@chatdokterkonsultasi, pembelianobat::class.java)
+            val intent = Intent(this@chatdokterkonsultasi, PembelianObat::class.java)
             startActivity(intent)
         }
     }

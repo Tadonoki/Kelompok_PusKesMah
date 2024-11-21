@@ -20,13 +20,13 @@
             android:name=".Riwayat"
             android:exported="false"/>
         <activity
-            android:name=".RiwayatObat"
+            android:name=".PembelianObat"
             android:exported="false"/>
         <activity
             android:name=".konfirmasipembayaranobat"
             android:exported="false" />
         <activity
-            android:name=".pembelianobat"
+            android:name=".RiwayatObat"
             android:exported="false" />
         <activity
             android:name=".chatdokterkonsultasi"
