@@ -57,7 +57,7 @@
         android:layout_marginTop="352dp"
         android:background="@drawable/edit_text_background"
         android:fontFamily="@font/fontoutfit"
-        android:text="*******"
+        android:text="*********"
         android:padding="12dp"
         android:textColor="#8C8994"
         android:textSize="16sp"

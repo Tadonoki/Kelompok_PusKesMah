@@ -17,25 +17,51 @@ class akun : AppCompatActivity() {
     private var username: String? = null // Username yang diambil dari SharedPreferences atau intent
     private var email: String? = null // Username yang diambil dari SharedPreferences atau intent
 
+
+
     @SuppressLint("SetTextI18n", "MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_akun)
+
 
         // Ambil username dari Intent yang diterima dan simpan dalam variabel kelas
         username = intent.getStringExtra("username")
 
         intent.putExtra("email", email)  // Menambahkan data email
 
+        // Referensi ke Firebase Database
+        database = FirebaseDatabase.getInstance().getReference("users")
 
         // Menampilkan username di TextView
         val textViewUsername = findViewById<TextView>(R.id.etUsername)
         textViewUsername.text = username ?: "Username tidak ditemukan"
 
-        // Menampilkan email di TextView
-        val textViewEmail = findViewById<TextView>(R.id.tvEmail)
-        textViewEmail.text = email ?: "Email tidak ditemukan"
+//
+// Ambil data dari Firebase dan tampilkan
+        if (username != null) {
+            database.child(username!!).addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    // Mengambil password dari Firebase
+                    val storedPassword = snapshot.child("password").getValue(String::class.java)
 
+                    // Mengambil email dari Firebase
+                    val email = snapshot.child("email").getValue(String::class.java)
+
+                    // Menampilkan email di TextView
+                    val textViewEmail = findViewById<TextView>(R.id.tvEmail)
+                    textViewEmail.text = email ?: "Email tidak ditemukan"
+
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    Toast.makeText(this@akun, "Gagal mengambil data: ${error.message}", Toast.LENGTH_SHORT).show()
+                }
+            })
+        } else {
+            Toast.makeText(this, "Username tidak ditemukan", Toast.LENGTH_SHORT).show()
+        }
+//
         // Navigasi ke Beranda
         val buttonHome = findViewById<ImageButton>(R.id.beranda)
         buttonHome.setOnClickListener {

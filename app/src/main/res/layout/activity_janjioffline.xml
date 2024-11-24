@@ -27,7 +27,7 @@
         app:layout_constraintHorizontal_bias="0.696"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14"
+        app:layout_constraintVertical_bias="0.134"
         tools:ignore="MissingConstraints" />
 
     <Spinner
@@ -39,7 +39,7 @@
         app:layout_constraintHorizontal_bias="0.696"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"
+        app:layout_constraintVertical_bias="0.343"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -148,11 +148,11 @@
         app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433"
+        app:layout_constraintVertical_bias="0.429"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/Bulan"
+        android:id="@+id/bulan"
         android:layout_width="99dp"
         android:layout_height="38dp"
         android:layout_margin="10dp"
@@ -168,11 +168,11 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434"
+        app:layout_constraintVertical_bias="0.427"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/Tahun"
+        android:id="@+id/tahun"
         android:layout_width="99dp"
         android:layout_height="38dp"
         android:layout_margin="10dp"
@@ -185,10 +185,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434"
+        app:layout_constraintVertical_bias="0.426"
         tools:ignore="MissingConstraints" />
 
 
