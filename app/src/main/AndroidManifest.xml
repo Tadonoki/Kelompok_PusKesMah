@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Kelompok_PusKesMah"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".notfound404"
             android:exported="false" />
         <activity
@@ -57,10 +60,6 @@
             android:name=".SignInActivity"
             android:exported="false"
             android:theme="@style/Theme.Kelompok_PusKesMah" /> <!-- Deklarasi untuk MainActivity2 -->
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" /> <!-- Jika tidak diekspos ke aplikasi lain -->
-        <!-- Deklarasi untuk MainActivity dengan intent-filter -->
         <activity
             android:name=".MainActivity"
             android:exported="true"> <!-- Ini harus true karena memiliki intent-filter -->

@@ -1,13 +1,8 @@
 {
-  "project_info": {
-    "project_number": "958451209754",
-    "project_id": "kelompok-puskesmah1",
-    "storage_bucket": "kelompok-puskesmah1.firebasestorage.app"
-  },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:958451209754:android:6ef5e194d2a2c65788e3a3",
+        "mobilesdk_app_id": "1:56278412024:android:be1f4aa292baf6c6d2690d",
         "android_client_info": {
           "package_name": "com.example.kelompok_puskesmah"
         }
@@ -15,7 +10,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDcgmw9GYw_D6ovXrbAqKN9nVXF31zF424"
+          "current_key": "AIzaSyB60ZZa3D33ZOcPrIZ8UwrqFChKJJVqaxc"
         }
       ],
       "services": {
@@ -25,5 +20,11 @@
       }
     }
   ],
-  "configuration_version": "1"
+  "configuration_version": "1",
+  "project_info": {
+    "project_number": "56278412024",
+    "project_id": "kelompok-puskesmah",
+    "storage_bucket": "kelompok-puskesmah.firebasestorage.app"
+  }
 }
+

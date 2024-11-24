@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         // Cari tombol daftar dengan ID
         val daftarButton = findViewById<Button>(R.id.daftar)
+        val daftarButton1 = findViewById<Button>(R.id.login)
 
         // Ketika tombol daftar di klik, pindah ke MainActivity2
         daftarButton.setOnClickListener {
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val loginButton = findViewById<Button>(R.id.login)
 
         // Ketika tombol daftar di klik, pindah ke MainActivity2
-        loginButton.setOnClickListener {
+        daftarButton1.setOnClickListener {
             val intent = Intent(this@MainActivity, SignInActivity::class.java)
             startActivity(intent)
         }

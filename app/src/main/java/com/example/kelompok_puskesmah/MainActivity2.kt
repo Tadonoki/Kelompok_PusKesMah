@@ -29,7 +29,7 @@ class MainActivity2 : AppCompatActivity() {
         btnRegister = findViewById(R.id.btnRegister)
 
         // Inisialisasi referensi database Firebase
-        database = FirebaseDatabase.getInstance().getReferenceFromUrl("https://kelompok-puskesmah1-default-rtdb.firebaseio.com/")
+        database = FirebaseDatabase.getInstance().getReferenceFromUrl("https://kelompok-puskesmah-default-rtdb.firebaseio.com/")
 
         // Event handler untuk tombol register
         btnRegister.setOnClickListener {
@@ -47,11 +47,9 @@ class MainActivity2 : AppCompatActivity() {
                 database.child(username).child("email").setValue(email)
                 database.child(username).child("password").setValue(password)
 
-
                 // Menampilkan pesan dan navigasi ke halaman login
                 Toast.makeText(applicationContext, "Register Berhasil", Toast.LENGTH_SHORT).show()
                 val registerIntent = Intent(applicationContext, SignInActivity::class.java)
-                intent.putExtra("email", email)  // Menambahkan data email
                 startActivity(registerIntent)
             }
         }

@@ -21,14 +21,7 @@ class detaildokterjanji : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        val buttonKonsul1 = findViewById<ImageButton>(R.id.detaildokterkembali)
-
-
-        buttonKonsul1.setOnClickListener {
-            val intent = Intent(this@detaildokterjanji, pilihdokterjanji::class.java)
-            startActivity(intent)
-        }
+        
 
         val konfirmasijanji = findViewById<Button>(R.id.konfirmasijanji)
 

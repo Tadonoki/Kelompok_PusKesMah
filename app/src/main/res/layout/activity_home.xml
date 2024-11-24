@@ -25,27 +25,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.031" />
 
+
     <TextView
-        android:id="@+id/time"
+        android:id="@+id/tvTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:layout_marginTop="48dp"
         android:background="@drawable/rounded_yellow"
-        android:backgroundTintMode="add"
-        android:fontFamily="@font/fontoutfit"
         android:gravity="center"
         android:padding="8dp"
         android:paddingHorizontal="16dp"
-        android:shape="rectangle"
-        android:text="09:00 pm"
+        android:text="00:00:00"
         android:textColor="#2C5CA6"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/location"
@@ -99,10 +96,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.182" />
+        app:layout_constraintVertical_bias="0.203" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -117,39 +114,7 @@
         app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.211" />
-
-    <EditText
-
-        android:layout_width="221dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="48dp"
-        android:background="@drawable/rounded_background"
-        android:fontFamily="@font/fontoutfit"
-        android:hint="Cari di Sini"
-        android:padding="8dp"
-        android:paddingStart="40dp"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/search_button"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
-
-    <Button
-        android:id="@+id/search_button"
-        android:layout_width="78dp"
-        android:layout_height="37dp"
-        android:background="@drawable/rounded_button"
-        android:text="Cari"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
+        app:layout_constraintVertical_bias="0.242" />
 
     <TextView
         android:id="@+id/textView14"
